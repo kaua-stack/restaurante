@@ -449,3 +449,19 @@ function obterLocalizacao() {
         status.style.color = "red";
     });
 }
+
+function goToCart() {
+    const modal = document.getElementById('modalSacolaMobile');
+
+    if (window.innerWidth <= 748 || window.innerHeight <= 867) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeMobileCart() {
+    const modal = document.getElementById('modalSacolaMobile');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+}
+
